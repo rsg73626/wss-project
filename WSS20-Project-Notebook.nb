@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2489278,      57415]
-NotebookOptionsPosition[   2459022,      56915]
-NotebookOutlinePosition[   2460506,      56958]
-CellTagsIndexPosition[   2460431,      56953]
+NotebookDataLength[   2493750,      57515]
+NotebookOptionsPosition[   2462614,      57006]
+NotebookOutlinePosition[   2464098,      57049]
+CellTagsIndexPosition[   2464023,      57044]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -56217,6 +56217,12 @@ Cell["Working with triangles", "Subsection",
   3.803298359468196*^9}},ExpressionUUID->"af1547d5-7346-4eb3-be7f-\
 e2742365bf83"],
 
+Cell["The sum of angles in any triangle is 180\[Degree]. [1]", "Text",
+ CellChangeTimes->{{3.803301307682744*^9, 3.803301337099161*^9}, 
+   3.803301719599887*^9},
+ Background->RGBColor[
+  0.88, 1, 0.88],ExpressionUUID->"11bc1843-d357-437c-baff-dd24e227cf11"],
+
 Cell[BoxData[
  RowBox[{
   RowBox[{"PolygonTriangleQ", "[", "polygon_", "]"}], ":=", 
@@ -56245,6 +56251,21 @@ Cell[BoxData[
  CellLabel->
   "In[137]:=",ExpressionUUID->"b7b5af5e-ba25-4c13-bcd5-744600d88eaf"],
 
+Cell[TextData[{
+ StyleBox["Right-angled triangle",
+  FontWeight->"Bold"],
+ "\nA right-angled triangle has one 90\[Degree] angle.That 90 \[Degree] angle \
+is shown as a small square where two sides of the triangle join. It is \
+possible for a triangle to be a right-angled triangle and an isosceles \
+triangle at the same time. In this case the angles would be 90\[Degree], 45\
+\[Degree] and 45\[Degree]. [1]"
+}], "Text",
+ CellChangeTimes->{{3.803301115146051*^9, 3.803301124811077*^9}, {
+  3.803301339539495*^9, 3.803301340083241*^9}, {3.8033017145289507`*^9, 
+  3.803301761602851*^9}},
+ Background->RGBColor[
+  0.88, 1, 0.88],ExpressionUUID->"ee30d481-1d55-476b-a981-33d42a263695"],
+
 Cell[BoxData[
  RowBox[{
   RowBox[{"PolygonRightTriangleQ", "[", "triangle_", "]"}], ":=", 
@@ -56270,6 +56291,18 @@ Cell[BoxData[
  CellLabel->
   "In[138]:=",ExpressionUUID->"a51143ef-fe49-4b47-99a9-d7a2eac70289"],
 
+Cell[TextData[{
+ StyleBox["Equilateral",
+  FontWeight->"Bold"],
+ "\nAn equilateral triangle has three equal sides and angles. It will always \
+have angles of 60\[Degree] in each corner. [1]"
+}], "Text",
+ CellChangeTimes->{{3.803301151211838*^9, 3.803301156417238*^9}, {
+  3.8033013430115232`*^9, 3.8033013435876827`*^9}, {3.8033018927356987`*^9, 
+  3.803301897548984*^9}},
+ Background->RGBColor[
+  0.88, 1, 0.88],ExpressionUUID->"d7b374f5-d803-4c8d-95ad-9bf9be93f336"],
+
 Cell[BoxData[
  RowBox[{
   RowBox[{"PolygonEquilateralTriangleQ", "[", "triangle_", "]"}], ":=", 
@@ -56292,6 +56325,60 @@ Cell[BoxData[
  CellChangeTimes->{{3.803300764294094*^9, 3.8033007990044203`*^9}},
  CellLabel->
   "In[186]:=",ExpressionUUID->"1ed2b9e8-d911-4667-80c2-36a6cafbd8b8"],
+
+Cell[TextData[{
+ StyleBox["Isosceles",
+  FontWeight->"Bold"],
+ "\nAn isosceles triangle can be drawn in many different ways. It can be \
+drawn to have two equal sides and two equal angles or with two acute angles \
+and one obtuse angle. It is easy to work out the missing angles of an \
+isosceles triangle by looking for the angles that should be equal. [1]"
+}], "Text",
+ CellChangeTimes->{{3.8033010462558126`*^9, 3.803301053108931*^9}, {
+  3.803301346003191*^9, 3.803301346387453*^9}, {3.803301911249344*^9, 
+  3.80330192658385*^9}},
+ Background->RGBColor[
+  0.88, 1, 0.88],ExpressionUUID->"67185966-6c72-4922-a106-f036c10a9cfc"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Define", " ", "function"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.80330123905107*^9, 
+  3.803301248847972*^9}},ExpressionUUID->"2c68fa77-6167-4d56-91df-\
+210df0f7cb60"],
+
+Cell[TextData[{
+ StyleBox["Scalene",
+  FontWeight->"Bold"],
+ "\nA scalene triangle has three different angles and none of its sides are \
+equal in length. [1]"
+}], "Text",
+ CellChangeTimes->{{3.8033010707822123`*^9, 3.803301093911718*^9}, {
+  3.80330134915553*^9, 3.803301351099537*^9}},
+ Background->RGBColor[
+  0.88, 1, 0.88],ExpressionUUID->"3569e54c-3ee2-4a50-a208-8ffb0067f4db"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Define", " ", "function"}], "*)"}]], "Input",ExpressionUUID->\
+"bb5da7d7-b25b-471a-aa58-bee2251d47c0"],
+
+Cell[TextData[{
+ StyleBox["Obtuse",
+  FontWeight->"Bold"],
+ "\nAn obtuse triangle has three different angles, with one angle greater \
+than 90\[Degree]. None of its sides are equal in length. [1]"
+}], "Text",
+ CellChangeTimes->{{3.80330109593311*^9, 3.803301102556437*^9}, {
+  3.8033013536998672`*^9, 3.80330135417973*^9}, {3.803301973952042*^9, 
+  3.8033019753383617`*^9}},
+ Background->RGBColor[
+  0.88, 1, 0.88],ExpressionUUID->"3a2132c3-72c8-4b97-a664-065fc4b157e0"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Define", " ", "function"}], "*)"}]], "Input",ExpressionUUID->\
+"dda82f7e-9d64-4286-9432-7bbf3a4888c7"],
 
 Cell[BoxData[
  RowBox[{
@@ -56899,9 +56986,13 @@ Cell["References", "Section",
 
 Cell[CellGroupData[{
 
-Cell["<Ref1>", "Item",
+Cell["\<\
+[1] https://www.bbc.co.uk/bitesize/topics/zwckjxs/articles/ztf9h39\
+\>", "Item",
  CellChangeTimes->{{3.802186382533594*^9, 3.802186383585804*^9}, {
-  3.802186733203268*^9, 3.8021867345244904`*^9}}],
+  3.802186733203268*^9, 3.8021867345244904`*^9}, {3.8033013628610687`*^9, 
+  3.803301366666731*^9}},ExpressionUUID->"bac34aab-5f3c-4c18-85c2-\
+373b47cd99f0"],
 
 Cell["<Ref2>", "Item",
  CellChangeTimes->{{3.802186382533594*^9, 3.802186385191455*^9}, {
@@ -56939,20 +57030,20 @@ ExpressionUUID->"e6895e13-bec2-4574-bfc4-189faddadc5a"
 (*CellTagsOutline
 CellTagsIndex->{
  "Keywords"->{
-  Cell[2457361, 56854, 190, 3, 67, "Section",ExpressionUUID->"366a9c7c-40b6-4e17-b612-e85b5abac490",
+  Cell[2460777, 56941, 190, 3, 67, "Section",ExpressionUUID->"366a9c7c-40b6-4e17-b612-e85b5abac490",
    CellTags->"Keywords",
    CellID->442466898],
-  Cell[2457949, 56875, 143, 3, 67, "Section",ExpressionUUID->"bd1f6cad-4ff3-4ab7-b602-0b4d3ed3e2ac",
+  Cell[2461365, 56962, 143, 3, 67, "Section",ExpressionUUID->"bd1f6cad-4ff3-4ab7-b602-0b4d3ed3e2ac",
    CellTags->"Keywords",
    CellID->1836614011],
-  Cell[2458451, 56894, 139, 3, 67, "Section",ExpressionUUID->"5961a637-a7ed-48e9-b1ab-e1a62f6c691c",
+  Cell[2461867, 56981, 139, 3, 67, "Section",ExpressionUUID->"5961a637-a7ed-48e9-b1ab-e1a62f6c691c",
    CellTags->"Keywords",
    CellID->1137237116]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Keywords", 2459958, 56940}
+ {"Keywords", 2463550, 57031}
  }
 *)
 (*NotebookFileOutline
@@ -57370,50 +57461,59 @@ Cell[2429738, 56169, 1690, 39, 198, "Input",ExpressionUUID->"54ba7959-696d-404c-
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2431477, 56214, 170, 3, 54, "Subsection",ExpressionUUID->"af1547d5-7346-4eb3-be7f-e2742365bf83"],
-Cell[2431650, 56219, 1036, 26, 94, "Input",ExpressionUUID->"b7b5af5e-ba25-4c13-bcd5-744600d88eaf"],
-Cell[2432689, 56247, 919, 23, 94, "Input",ExpressionUUID->"a51143ef-fe49-4b47-99a9-d7a2eac70289"],
-Cell[2433611, 56272, 808, 21, 94, "Input",ExpressionUUID->"1ed2b9e8-d911-4667-80c2-36a6cafbd8b8"],
-Cell[2434422, 56295, 658, 16, 94, "Input",ExpressionUUID->"b903d679-8512-495b-96c2-c4635ca417d3"],
+Cell[2431650, 56219, 258, 4, 51, "Text",ExpressionUUID->"11bc1843-d357-437c-baff-dd24e227cf11"],
+Cell[2431911, 56225, 1036, 26, 94, "Input",ExpressionUUID->"b7b5af5e-ba25-4c13-bcd5-744600d88eaf"],
+Cell[2432950, 56253, 682, 13, 97, "Text",ExpressionUUID->"ee30d481-1d55-476b-a981-33d42a263695"],
+Cell[2433635, 56268, 919, 23, 94, "Input",ExpressionUUID->"a51143ef-fe49-4b47-99a9-d7a2eac70289"],
+Cell[2434557, 56293, 468, 10, 74, "Text",ExpressionUUID->"d7b374f5-d803-4c8d-95ad-9bf9be93f336"],
+Cell[2435028, 56305, 808, 21, 94, "Input",ExpressionUUID->"1ed2b9e8-d911-4667-80c2-36a6cafbd8b8"],
+Cell[2435839, 56328, 631, 12, 97, "Text",ExpressionUUID->"67185966-6c72-4922-a106-f036c10a9cfc"],
+Cell[2436473, 56342, 211, 5, 30, "Input",ExpressionUUID->"2c68fa77-6167-4d56-91df-210df0f7cb60"],
+Cell[2436687, 56349, 383, 9, 74, "Text",ExpressionUUID->"3569e54c-3ee2-4a50-a208-8ffb0067f4db"],
+Cell[2437073, 56360, 143, 3, 30, "Input",ExpressionUUID->"bb5da7d7-b25b-471a-aa58-bee2251d47c0"],
+Cell[2437219, 56365, 470, 10, 74, "Text",ExpressionUUID->"3a2132c3-72c8-4b97-a664-065fc4b157e0"],
+Cell[2437692, 56377, 143, 3, 30, "Input",ExpressionUUID->"dda82f7e-9d64-4286-9432-7bbf3a4888c7"],
+Cell[2437838, 56382, 658, 16, 94, "Input",ExpressionUUID->"b903d679-8512-495b-96c2-c4635ca417d3"],
 Cell[CellGroupData[{
-Cell[2435105, 56315, 1269, 35, 73, "Input",ExpressionUUID->"e6896f1c-32b9-4c9a-b575-ec34c6941221"],
-Cell[2436377, 56352, 9594, 228, 204, "Output",ExpressionUUID->"f0fd97ed-aead-4cd8-8144-88b0bc097376"]
+Cell[2438521, 56402, 1269, 35, 73, "Input",ExpressionUUID->"e6896f1c-32b9-4c9a-b575-ec34c6941221"],
+Cell[2439793, 56439, 9594, 228, 204, "Output",ExpressionUUID->"f0fd97ed-aead-4cd8-8144-88b0bc097376"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2446008, 56585, 1087, 25, 94, "Input",ExpressionUUID->"9007f18c-997e-425b-8ec9-6462dba61b7b"],
-Cell[2447098, 56612, 2326, 59, 750, "Output",ExpressionUUID->"49d5f058-5c13-402d-a2c5-5587c21cb936"]
+Cell[2449424, 56672, 1087, 25, 94, "Input",ExpressionUUID->"9007f18c-997e-425b-8ec9-6462dba61b7b"],
+Cell[2450514, 56699, 2326, 59, 727, "Output",ExpressionUUID->"49d5f058-5c13-402d-a2c5-5587c21cb936"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2449461, 56676, 302, 5, 30, "Input",ExpressionUUID->"0d12989a-f03f-4f67-a146-3794a719f1ca"],
-Cell[2449766, 56683, 6921, 149, 62, "Output",ExpressionUUID->"c074ae2b-b6d1-4fc9-9820-617e0b6dacbe"]
+Cell[2452877, 56763, 302, 5, 30, "Input",ExpressionUUID->"0d12989a-f03f-4f67-a146-3794a719f1ca"],
+Cell[2453182, 56770, 6921, 149, 62, "Output",ExpressionUUID->"c074ae2b-b6d1-4fc9-9820-617e0b6dacbe"]
 }, Open  ]],
-Cell[2456702, 56835, 610, 13, 40, "Input",ExpressionUUID->"641ea2b0-2cae-46d7-a405-e47a4b5fcdff"]
+Cell[2460118, 56922, 610, 13, 40, "Input",ExpressionUUID->"641ea2b0-2cae-46d7-a405-e47a4b5fcdff"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2457361, 56854, 190, 3, 67, "Section",ExpressionUUID->"366a9c7c-40b6-4e17-b612-e85b5abac490",
+Cell[2460777, 56941, 190, 3, 67, "Section",ExpressionUUID->"366a9c7c-40b6-4e17-b612-e85b5abac490",
  CellTags->"Keywords",
  CellID->442466898],
 Cell[CellGroupData[{
-Cell[2457576, 56861, 140, 2, 32, "Item",ExpressionUUID->"5813e785-8d21-454e-ac75-5f3913597a2c"],
-Cell[2457719, 56865, 90, 1, 32, "Item",ExpressionUUID->"995c8064-6859-4e41-b6cd-65ce27221847"],
-Cell[2457812, 56868, 88, 1, 32, "Item",ExpressionUUID->"bedccd35-f9c3-46ac-ac87-d418e441e604"]
+Cell[2460992, 56948, 140, 2, 32, "Item",ExpressionUUID->"5813e785-8d21-454e-ac75-5f3913597a2c"],
+Cell[2461135, 56952, 90, 1, 32, "Item",ExpressionUUID->"995c8064-6859-4e41-b6cd-65ce27221847"],
+Cell[2461228, 56955, 88, 1, 32, "Item",ExpressionUUID->"bedccd35-f9c3-46ac-ac87-d418e441e604"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2457949, 56875, 143, 3, 67, "Section",ExpressionUUID->"bd1f6cad-4ff3-4ab7-b602-0b4d3ed3e2ac",
+Cell[2461365, 56962, 143, 3, 67, "Section",ExpressionUUID->"bd1f6cad-4ff3-4ab7-b602-0b4d3ed3e2ac",
  CellTags->"Keywords",
  CellID->1836614011],
-Cell[2458095, 56880, 179, 5, 35, "Text",ExpressionUUID->"006d71ed-241c-4cf5-8ee6-00d91fa914f6"],
-Cell[2458277, 56887, 137, 2, 35, "Text",ExpressionUUID->"279e8012-b716-44b0-8c1c-3c37e92e2ad2"]
+Cell[2461511, 56967, 179, 5, 35, "Text",ExpressionUUID->"006d71ed-241c-4cf5-8ee6-00d91fa914f6"],
+Cell[2461693, 56974, 137, 2, 35, "Text",ExpressionUUID->"279e8012-b716-44b0-8c1c-3c37e92e2ad2"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2458451, 56894, 139, 3, 67, "Section",ExpressionUUID->"5961a637-a7ed-48e9-b1ab-e1a62f6c691c",
+Cell[2461867, 56981, 139, 3, 67, "Section",ExpressionUUID->"5961a637-a7ed-48e9-b1ab-e1a62f6c691c",
  CellTags->"Keywords",
  CellID->1137237116],
 Cell[CellGroupData[{
-Cell[2458615, 56901, 139, 2, 32, "Item",ExpressionUUID->"bac34aab-5f3c-4c18-85c2-373b47cd99f0"],
-Cell[2458757, 56905, 137, 2, 32, "Item",ExpressionUUID->"e5e467fd-9b3a-49e2-8d1e-d3011b1f02df"],
-Cell[2458897, 56909, 85, 1, 32, "Item",ExpressionUUID->"40a463f9-c8f1-43ba-810b-4f669ff2ca85"]
+Cell[2462031, 56988, 315, 6, 32, "Item",ExpressionUUID->"bac34aab-5f3c-4c18-85c2-373b47cd99f0"],
+Cell[2462349, 56996, 137, 2, 32, "Item",ExpressionUUID->"e5e467fd-9b3a-49e2-8d1e-d3011b1f02df"],
+Cell[2462489, 57000, 85, 1, 32, "Item",ExpressionUUID->"40a463f9-c8f1-43ba-810b-4f669ff2ca85"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
